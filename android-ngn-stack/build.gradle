@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdk 31
@@ -32,4 +33,10 @@ android {
 
 dependencies {
     implementation 'org.simpleframework:simple-xml:2.7.1'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+/*
+repositories {
+    mavenCentral()
+}*/
